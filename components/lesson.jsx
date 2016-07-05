@@ -6,7 +6,7 @@ const Base = require('./base')
 
 module.exports = class Lesson extends Base {
   componentWillMount() {
-    this.sync(state, ['lesson','error'])
+    this.sync(state, ['lesson','error','done'])
   }
   
   componentDidUpdate() {
@@ -24,9 +24,8 @@ module.exports = class Lesson extends Base {
   }
   
   renderSuccess() {
-    const {lesson} = this.state
-    const {done} = lesson
-    console.log('lesson is', lesson)
+    const {done} = this.state
+    if (!done) return ''
     return <div className="notification is-success">
       <button className="delete"></button>
       Congratulations, it works!

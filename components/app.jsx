@@ -27,10 +27,13 @@ module.exports = class App extends Base {
     state.on('change:code', code => {
       state.lesson.code = code
       state.error = null
-      state.lesson.verify(code).then(
-        v => state.done = true,
-        e => state.error = e
-      )
+      state.done = false
+      if (code && code.length) {
+        state.lesson.verify(code).then(
+          v => state.done = true,
+          e => state.error = e
+        )
+      }
     })
     
     state.on('change:error', error => {

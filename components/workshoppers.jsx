@@ -23,10 +23,6 @@ module.exports = class Workshoppers extends Base {
       })
   }
   
-  componentWillMount() {
-    this.switchTo(this.props.workshop.name)
-  }
-  
   componentWillReceiveProps({ workshop }) {
     this.switchTo(workshop.name)
   }
