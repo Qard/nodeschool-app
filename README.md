@@ -1,5 +1,7 @@
 # NodeSchool App
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/nodeschool-app.svg)](https://greenkeeper.io/)
+
 This is an in-progress project to build an electron app that lets you run
 nodeschool workshoppers in a graphical environment. The hope is that this'll
 be more approachable for new users. 💯
