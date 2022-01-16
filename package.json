@@ -20,7 +20,7 @@
     "insert-css": "^1.0.0",
     "installed": "^3.3.1",
     "jsx-require-extension": "^0.2.0",
-    "marked": "^0.3.5",
+    "marked": "^4.0.10",
     "npm-install-package": "^1.0.2",
     "react": "^15.2.0",
     "react-dom": "^15.2.0"
