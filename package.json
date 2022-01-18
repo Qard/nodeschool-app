@@ -22,8 +22,8 @@
     "jsx-require-extension": "^0.2.0",
     "marked": "^0.3.5",
     "npm-install-package": "^1.0.2",
-    "react": "^15.2.0",
-    "react-dom": "^15.2.0"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
     "electron-devtools-installer": "^1.1.5",
